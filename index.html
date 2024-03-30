@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Happy birthday project</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(249,249,249);
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    
+</head>
+
+<body>
+  <div class="popup" id="popup">
+      <h2>Cookie Popup</h2>
+      <p>Website menggunakan cookie. Click "Terima Cookies" untuk lanjut</p>
+      <button id="acceptButton">Terima cookies</button>
+    </div>
+    
+    <video id="audio-auto" muted autoplay loop src="/hbd.mp4" controls style="width: 0.1px; height: 0.1px;"></video>
+    <script>
+      const acceptButton = document.getElementById('acceptButton');
+      const popup = document.getElementById('popup');
+      acceptButton.addEventListener('click', function() {
+        const video = document.getElementById('audio-auto');
+        
+        video.muted = false;
+        
+        popup.style.display = 'none';
+        
+        video.style.display = 'none';
+        
+      });
+    </script>
+    
+ <h2>HBD SAYANGG!!</h2>
+<div class="body">
+ <div class="birthdayCard">
+<div class="cardFront"><h3 class="happy">HAPPY BIRTHDAY SAYANGKUU!!</h3>
+<div class="balloons">
+  <div class="balloonOne"></div>
+  <div class="balloonTwo"></div>
+  <div class="balloonThree"></div>
+  <div class="balloonFour"></div>
+  <div class="balloonFive"></div>
+</div>
+</div>
+<div class="cardInside">
+    <h3 class="back">HAPPY BIRTHDAY!</h3>
+    <p contenteditable="false">Dear My Love,</p> 
+<p contenteditable="false">HBD Cintakuu!!, Aku seneng banget rasanya hari ini umur kamu bertambah satu tahun lagi, kamu sekarang sudah bertambah dewasa Sayangg, Aku harap kamu bisa jadi orang yang lebih baik lagi dan lebih dewasa lagi Sayangg.</p>
+<p contenteditable="false">Maaf banget ya Sayang... aku cuma bisa ngasih surprise simpel gini doang, Aku belum bisa bikin kamu senang, Aku minta maaf juga kalo aku sering bikin masalah dan suka bikin Ayangg kesel, buat sekarang aku cuma bisa doain kamu semua yang terbaik. Love You So Muchh Cintakuu......</p>
+    <p contenteditable="false" class="name">Your Love - Rama</p>
+  </div>
+</div>
+</div>
+<footer><center>Design & Develop by <a href="/profile.html">DanteRama</a></center>
+</footer>
+<footer>
+<button class="next-page">
+  <a href="kado.html">klik disini kalo udah selesai baca</a></button>
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
